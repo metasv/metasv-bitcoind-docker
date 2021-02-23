@@ -8,9 +8,9 @@ RUN set -ex \
 	&& apt-get install -qq --no-install-recommends ca-certificates dirmngr gosu gpg wget \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV BITCOIN_VERSION 1.0.7.beta
-ENV BITCOIN_URL http://download.bitcoinsv.io/bitcoinsv/1.0.7.beta/bitcoin-sv-1.0.7.beta-x86_64-linux-gnu.tar.gz
-ENV BITCOIN_SHA256 cdec1b2592f3216932c318512392d33f8968e34cdfc55d2eb576d19f10cfd240
+ENV BITCOIN_VERSION 1.0.7
+ENV BITCOIN_URL https://download.bitcoinsv.io/bitcoinsv/1.0.7/bitcoin-sv-1.0.7-x86_64-linux-gnu.tar.gz
+ENV BITCOIN_SHA256 6785f117b282aee4f81fb06d1fb5fb900306ca5c5a91ad85619f68da20f68445
 
 # install bitcoin binaries
 RUN set -ex \
